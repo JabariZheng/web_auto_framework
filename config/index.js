@@ -28,12 +28,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        //代理
-        '/api/v1/**': {
-            target: 'https://cnodejs.org', // 你接口的域名
-            secure: false,
-            changeOrigin: false,
-        }
+        // //代理-调取远端接口无需开启代理，前后同在一服务器下需要开启
+        // '/api/v1/**': {
+        //     target: 'https://cnodejs.org', // 你接口的域名
+        //     secure: false,
+        //     changeOrigin: false,
+        // }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

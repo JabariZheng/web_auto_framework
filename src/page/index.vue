@@ -38,10 +38,39 @@
 		components:{HeadTop,Foot,MenuLeft},
 		data(){
 			return{
-			
+				id:"1212",
+				nn:123
 			}
 		},
-		methods: {},
-		created(){}
+		methods: {
+			getApi(){
+				//调取接口方式 get（post同样）-接口名称mock-参数传递：无-成功函数-失败函数（可写可不写）
+				this.$api.get("mock",null,r=>{
+					console.log("success");
+					console.log(r)
+				},r=>{
+					console.log("fail");
+					console.log(r)
+				})
+			},
+			postApi(){
+				//调取接口方式 get（post同样）-接口名称mock-参数传递：有-成功函数-失败函数（可写可不写）				
+				let data={
+					id:55
+				};
+				this.$api.get("proxy",data,r=>{
+					console.log("success");
+					console.log(r)
+				},r=>{
+					console.log("fail");
+					console.log(r)
+				})
+			}
+		},
+		created(){
+			// this.getApi();
+			this.postApi();
+			console.log(this.id);
+		}
 	}
 </script>
