@@ -67,10 +67,13 @@
 				})
 			}
 		},
-		created(){
+		created(){//页面加载之前
 			// this.getApi();
-			this.postApi();
-			console.log(this.id);
+			// this.postApi();
+			// console.log(this.id);
+		},
+		mounted(){//页面加载完之后
+
 		}
 	}
 </script>
