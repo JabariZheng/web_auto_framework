@@ -21,4 +21,6 @@ npm run build
 npm run build --report
 ```
 
+# css background-img src simple 
+# background-img:url('/../../static/image/log.png')
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
