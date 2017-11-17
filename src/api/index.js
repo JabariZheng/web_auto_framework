@@ -1,5 +1,5 @@
 // 配置API接口地址
-var root = 'https://www.easy-mock.com/mock/59ae046be0dc6633419c7aad/example'
+var root = ''
 // 引用axios
 var axios = require('axios')
 // 自定义判断元素类型JS
